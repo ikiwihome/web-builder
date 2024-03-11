@@ -14,7 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-https://github.com/ikiwihome/web-builder
+https://github.com/givanz/VvvebJs
 */
 
 define('MAX_FILE_LIMIT', 1024 * 1024 * 2);//2 Megabytes max html file size

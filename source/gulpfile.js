@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-https://github.com/ikiwihome/web-builder
+https://github.com/givanz/VvvebJs
 */
 //npm run gulp watch
 
@@ -22,17 +22,17 @@ const fileinclude = require('gulp-file-include');
 //const sass = require('gulp-sass')(require('sass'));
 const sass = require('gulp-sass')(require('node-sass'));
 const formatHtml = require('gulp-format-html');
-const through2 = require('through2');
+const through2 = require( 'through2' );    
 
-const touch = () => through2.obj(function (file, enc, cb) {
-  if (file.stat) {
-    file.stat.atime = file.stat.mtime = file.stat.ctime = new Date();
-  }
-  cb(null, file);
+const touch = () => through2.obj( function( file, enc, cb ) {
+    if ( file.stat ) {
+        file.stat.atime = file.stat.mtime = file.stat.ctime = new Date();
+    }
+    cb( null, file );
 });
 
-gulp.task('fileinclude', function () {
-  //gulp.src(['./html/**/*.html', '!**/_*/**'])
+gulp.task('fileinclude', function() {
+	//gulp.src(['./html/**/*.html', '!**/_*/**'])
   return gulp.src(['./html/*.html', './html/**/*.html', '!**/_*/**'])
     .pipe(fileinclude({
       prefix: '@@',
@@ -43,8 +43,8 @@ gulp.task('fileinclude', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('sass', function () {
-  //gulp.src(['./html/**/*.html', '!**/_*/**'])
+gulp.task('sass', function() {
+	//gulp.src(['./html/**/*.html', '!**/_*/**'])
   return gulp.src(['./scss/*.scss'])
     .pipe(sass())
     .pipe(gulp.dest('./css'));
@@ -52,8 +52,8 @@ gulp.task('sass', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(['./html/*.html', './html/**/*.html'], gulp.series('fileinclude'));
-  gulp.watch(['./scss/*.scss'], gulp.series('sass'));
+    gulp.watch(['./html/*.html', './html/**/*.html'], gulp.series('fileinclude'));
+    gulp.watch(['./scss/*.scss'], gulp.series('sass'));
 });
 
 // Default Task

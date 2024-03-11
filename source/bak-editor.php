@@ -69,20 +69,20 @@
 								
 					<div class="btn-group me-3 float-end" role="group">
 					  <button class="btn btn-primary btn-icon" title="Export (Ctrl + E)" id="save-btn" data-vvveb-action="saveAjax" data-vvveb-url="save.php" data-v-vvveb-shortcut="ctrl+e">
-						  <i class="la la-save"></i> <span data-v-gettext>Save page</span>
+						  <i class="la la-save"></i> <span data-v-gettext>保存页面</span>
 					  </button>
 					</div>	
 
 					<div class="btn-group float-end me-3 responsive-btns" role="group">
-		 			 <button id="mobile-view" data-view="mobile" class="btn btn-light"  title="Mobile view" data-vvveb-action="viewport">
+		 			 <button id="mobile-view" data-view="mobile" class="btn btn-light"  title="手机视图" data-vvveb-action="viewport">
 						  <i class="la la-mobile"></i>
 					  </button>
 
-					  <button id="tablet-view"  data-view="tablet" class="btn btn-light"  title="Tablet view" data-vvveb-action="viewport">
+					  <button id="tablet-view"  data-view="tablet" class="btn btn-light"  title="平板视图" data-vvveb-action="viewport">
 						  <i class="la la-tablet"></i>
 					  </button>
 					  
-					  <button id="desktop-view"  data-view="" class="btn btn-light"  title="Desktop view" data-vvveb-action="viewport">
+					  <button id="desktop-view"  data-view="" class="btn btn-light"  title="电脑视图" data-vvveb-action="viewport">
 						  <i class="la la-laptop"></i>
 					  </button>
 
@@ -94,11 +94,11 @@
 
 					  <div id="filemanager"> 
 							<div class="header">
-								<a href="#" class="text-secondary">Pages</a>
+								<a href="#" class="text-secondary">页面</a>
 
 									<div class="btn-group responsive-btns me-4 float-end" role="group">
 									  <button class="btn btn-link btn-sm" title="New file" id="new-file-btn" data-vvveb-action="newPage" data-vvveb-shortcut="">
-										  <i class="la la-file"></i> <small>New page</small>
+										  <i class="la la-file"></i> <small>新页面</small>
 									  </button>
 									  
 									  <!--  &ensp;

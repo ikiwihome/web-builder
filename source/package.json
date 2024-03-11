@@ -1,10 +1,10 @@
 {
-  "name": "vvvebjs",
-  "description": "Drag and drop website builder javascript library",
+  "name": "Web builder",
+  "description": "可视化网页编辑器",
   "version": "0.0.1",
-  "author": "Ziadin Givan",
+  "author": "ikiwicc",
   "license": "Apache-2.0",
-  "homepage": "https://www.vvveb.com/vvvebjs/editor.html",
+  "homepage": "https://web.ikiwi.cc",
   "main": "libs/builder/builder.js",
   "repository": {
     "type": "git",
