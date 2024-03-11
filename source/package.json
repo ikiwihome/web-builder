@@ -1,5 +1,5 @@
 {
-  "name": "Web builder",
+  "name": "web-builder",
   "description": "可视化网页编辑器",
   "version": "0.0.1",
   "author": "ikiwicc",
@@ -11,8 +11,8 @@
     "url": "https://github.com/ikiwihome/web-builder.git"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "jquery": "^3.0"
+    "express": "^4.18.3",
+    "jquery": "^3.7.1"
   },
   "keywords": [
     "vvvebjs",
@@ -25,7 +25,8 @@
     "template",
     "editor",
     "site",
-    "builder"
+    "builder",
+    "bootstrap"
   ],
   "scripts": {
     "gulp": "gulp",
@@ -34,9 +35,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
-    "gulp-format-html": "^1.2.5",
+    "gulp-format-html": "^2.3.0",
     "gulp-sass": "^5.1.0",
-    "node-sass": "^8.0.0",
-    "sass": "^1.60.0"
+    "node-sass": "^9.0.0",
+    "sass": "^1.71.1"
   }
 }
